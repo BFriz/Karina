@@ -1,0 +1,144 @@
+html{
+  min-height: 950px;/* make sure it is at least as tall as the viewport */
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+
+/******************header******************/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10% 0 10%
+}
+.logo {
+  width: 30%;
+}
+
+.rrssb-buttons {
+  width: 30% !important;
+  display: flex;
+}
+
+
+/******************360 degree image******************/
+
+.backgroundImg{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1; 
+}
+.vrImage{
+  height: 100%;
+  width: 100%;
+}
+.bkgroundImg {
+  width: 80%;¡
+  margin: 0 auto;
+}
+
+/******************Slider*******************/
+.parentContainer {
+  border: 4px magenta dotted;
+  position: relative;
+  width: 80%;
+  margin: 5% auto 0 auto;  
+}
+
+
+.sliderContainerToggle{
+  display: none;
+}
+
+li.carousel-cell{
+  width: 100% !important;
+  height: 600px;
+}
+
+
+/*top section of the slider*/
+.mainTextSlider {
+  margin: 6%;
+}
+
+.mainTextArea{
+  padding-left: 10%;
+}
+.mainText{
+  font-size: 1.3em;
+  color: grey;
+}
+
+.mainBoxHeader{
+  padding-top: 5%;
+  color: red;
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: 3%;
+}
+
+/*bottom section of the slider*/
+.subFooter {
+  display: flex;
+  justify-content: center;
+}
+.footerBox {
+  text-align: center;
+  margin: 5%;
+  color: red;
+}
+.redNumber{
+  font-size: 6em;
+  font-weight: 900;
+  margin-bottom: 8%;
+}
+
+.redText{
+  font-size: 1.5em;
+}
+
+/*slide counter*/
+.bx-wrapper .bx-pager {
+  position: absolute !important;
+  top: 5%;
+  left: 40%;
+  color: red !important;
+  font-size: 1.5rem !important;
+}
+/******************button that spins******************/
+
+
+
+
+
+.buttonMainBefore {
+  position: fixed;
+}
+
+.buttonMainAfter {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);  
+  
+}
+
+.buttonMain{
+  text-decoration: none;
+  border: none;
+  height: 6em;
+  width: 6em;
+  border-radius: 60px;
+  /*display: inline-block;*/
+  position: absolute;
+   bottom: 0;
+  right: -50px;
+}
